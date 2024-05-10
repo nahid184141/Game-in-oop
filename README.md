@@ -1,2 +1,5 @@
 # snake Game-in-oop
-This is my first project
+<br>
+Author:MD Nahid Hasan Rabbi
+
+This is my first git project
