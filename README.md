@@ -1,2 +1,2 @@
-# Game-in-oop
+# snake Game-in-oop
 This is my first project
