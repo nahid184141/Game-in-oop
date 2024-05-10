@@ -1,5 +1,5 @@
 import unittest
-from snakegame import GameManager, Snake, Food  # Adjust this import based on your actual code structure
+from snakegame import GameManager, Snake, Food  
 
 class TestGameManager(unittest.TestCase):
     def test_singleton_instance(self):
@@ -16,9 +16,10 @@ class TestGameManager(unittest.TestCase):
     def test_score_increment(self):
         manager = GameManager.get_instance()
         initial_score = manager.score
-        manager.score += 10  # Assume food is worth 10 points
+        manager.score += 10  # Assume food is worth 10 point
         self.assertEqual(manager.score, initial_score + 10)
 
 if __name__ == '__main__':
     unittest.main()
 
+# unittest
