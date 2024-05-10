@@ -25,6 +25,7 @@ class GameManager:
             GameManager._instance = self
             self.score = 0
             self.game_over = False
+            self.score_saved = False
             self.objects = []
             self.init_objects()
 
@@ -39,7 +40,14 @@ class GameManager:
     def reset_game(self):
         self.score = 0
         self.game_over = False
+        self.score_saved = False
         self.init_objects()
+   
+    def save_score(self):
+        if not self.score_saved:
+            with open("score.txt", "a") as file:
+                file.write(f"{self.score}\n")
+            self.score_saved = True
 
 # Abstract class for game objects
 class GameObject(ABC):
@@ -81,6 +89,8 @@ class Snake(GameObject):
         new_head = (head_x + self.dx, head_y + self.dy)
         if new_head in self.body or new_head[0] < 0 or new_head[0] >= WIDTH or new_head[1] < 0 or new_head[1] >= HEIGHT:
             GameManager.get_instance().game_over = True
+            GameManager.get_instance().save_score()
+
         else:
             self.body.insert(0, new_head)
             if not GameManager.get_instance().objects[1].check_collision(new_head[0], new_head[1]):
@@ -151,7 +161,7 @@ def main():
             font = pygame.font.SysFont(None, 72)
             text = font.render(f"Game Over! Score: {manager.score}", True, (255, 255, 255))
             screen.blit(text, (WIDTH // 2 - text.get_width() // 2, HEIGHT // 2 - text.get_height() // 2))
-            restart_text = font.render("Press 'R' to Restart or 'Esc' to Exit", True, (255, 255, 255))
+            restart_text = font.render("Press 'R' to Restart  'Esc' to Exit", True, (255, 255, 255))
             screen.blit(restart_text, (WIDTH // 2 - restart_text.get_width() // 2, HEIGHT // 2 + text.get_height()))
 
         pygame.display.flip()
