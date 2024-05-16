@@ -111,5 +111,5 @@ class GameManager:
 - The GameObjectFactory class uses the Factory pattern to create instances of Snake and Food. This method returns a new instance of a class depending on the type argument provided, decoupling the creation details from the main game logic.
   ## Result
 - The Snake game allows players to control a snake using arrow keys, eat food items to grow longer, and displays the score dynamically on the screen.
-- Implementing collision detection between the snake and itself was challenging, particularly in managing the snake's body segments and ensuring accurate detection. Additionally, maintaining a consistent frame rate and smooth movement required fine-tuning the game loop.
+- Implementing collision detection between the snake and itself was challenging, particularly in managing the snake's body segments and ensuring accurate detection. Additionally, maintaining a consistent frame rate and smooth movement required fine-tuning the game loop.Also, github contro is challenging for me.
 - The game successfully detects when the snake collides with itself or the boundaries, displaying a "Game Over" message and providing options to restart or exit.
