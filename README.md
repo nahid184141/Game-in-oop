@@ -12,3 +12,8 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 3. Open a terminal or command prompt.<br>
 4. Navigate to the directory containing the downloaded file.<br>
 5. Run the command: `snakegame.py`.
+### Use of program
+- Use the arrow keys (Up, Down, Left, Right) to control the direction of the snake.
+- The game continues until the snake collides with itself.
+- Press 'R' to restart the game after a game over.
+- Press 'Esc' to exit the game.
