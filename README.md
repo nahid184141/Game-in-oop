@@ -29,6 +29,31 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
         super().__init__(x, y, SNAKE_SIZE)
         self.body = [(x, y)]
         self.dx, self.dy = SNAKE_SIZE, 0
+    def change_direction(self, dx, dy):
+        self.dx, self.dy = dx, dy
 ```
 - Here, Snake class, encapsulation is evident as it combines properties like body, dx, and dy, and methods like draw, update, and change_direction within a single class. Access to these properties is controlled through methods like change_direction, which manages how the snake's direction can be altered.
 ##### In this code have five class those are enncapsulated.
+### Inheritance:
+- Inheritance is a mechanism where a new class derives attributes and methods from an existing class. The new class is called a derived class or subclass, and the existing class is called a base class or superclass.
+#### Example
+```python
+class Snake(GameObject):
+    def __init__(self, x, y):
+        super().__init__(x, y, SNAKE_SIZE)
+       
+
+class Food(GameObject):
+    def __init__(self, x, y):
+        super().__init__(x, y, FOOD_SIZE)
+
+```
+-In this code  Snake and Food class are inherit from parent class Gameobject.
+
+### Polymorphism:
+
+### Abstract methods:
+
+### singleton pattern:
+
+### Factory pattern:
