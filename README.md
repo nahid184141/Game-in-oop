@@ -79,6 +79,7 @@ class Food(GameObject):
          @abstractmethod
      def update(self):
           pass```
+
 - GameObject class defines draw and update as abstract methods, making GameObject an abstract class that cannot be instantiated. All classes that inherit from GameObject must provide an implementation for these methods.
 
 ### singleton pattern:
