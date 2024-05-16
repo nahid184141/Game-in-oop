@@ -63,9 +63,22 @@ class Food(GameObject):
     def draw(self, surface):
         pygame.draw.rect(surface, self.color, (self.x, self.y, self.size, self.size))
 ```
-- The draw and update methods of the GameObject class are abstract and are implemented differently in the Snake and Food subclasses. This showcases polymorphism where the same method name (draw, update) behaves differently depending on whether it's called on a Snake object or a Food object. 
+- Here, draw and update methods of the GameObject class are abstract and are implemented differently in the Snake and Food subclasses. This showcases polymorphism where the same method name (draw, update) behaves differently depending on whether it's called on a Snake object or a Food object. 
 
 ### Abstract methods:
+- Abstract methods are methods that are declared in an abstract class and must be implemented by all subclasses of this abstract class. An abstract class cannot be instantiated and is used to define a common interface for its subclasses.
+  ```python
+  from abc import ABC, abstractmethod
+
+class GameObject(ABC):
+    @abstractmethod
+    def draw(self, surface):
+        pass
+
+    @abstractmethod
+    def update(self):
+        pass```
+- GameObject class defines draw and update as abstract methods, making GameObject an abstract class that cannot be instantiated. All classes that inherit from GameObject must provide an implementation for these methods.
 
 ### singleton pattern:
 
