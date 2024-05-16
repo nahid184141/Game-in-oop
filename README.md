@@ -1,6 +1,6 @@
-# snake Game-in-oop
+# Snake Game-in-oop
 <br>
-Author:Md Nahid Hasan Rabbi
+**Author:Md Nahid Hasan Rabbi**
 
 This is my first github project.
 ## Introduction
@@ -18,7 +18,7 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 - Press 'R' to restart the game after a game over.
 - Press 'Esc' to exit the game.
 
-# Analysis
+## Analysis
 ***The Snake game is structured using Object-Oriented Programming (OOP) principles and includes the use of the Singleton and Factory design patterns.***
 ### Encapsulation:
 - Encapsulation is an OOP principle that bundles the data (attributes) and methods (operations) that manipulate the data into a single unit or class. It also restricts direct access to some of an object's components, which is a way of preventing accidental interference and misuse of the methods and data.
@@ -86,6 +86,7 @@ class GameObject(ABC):
 
 ### singleton pattern:
 - The Singleton Pattern ensures that a class has only one instance and provides a global point of access to that instance.
+  #### Example
 ```python
 class GameManager:
     _instance = None
@@ -99,6 +100,7 @@ class GameManager:
 - The GameManager class is designed as a singleton. It ensures that there is only one instance of this class throughout the application, which is crucial for maintaining a consistent state of the game across different parts of the application.
 ### Factory pattern:
 - The Factory Pattern involves a method that handles object creation and encapsulates it in a separate object. This allows for creating objects without specifying the exact class of object that will be created.
+#### Example
 ```python
   class GameObjectFactory:
     @staticmethod
