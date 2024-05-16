@@ -63,6 +63,7 @@ class Food(GameObject):
     def draw(self, surface):
         pygame.draw.rect(surface, self.color, (self.x, self.y, self.size, self.size))
 ```
+- The draw and update methods of the GameObject class are abstract and are implemented differently in the Snake and Food subclasses. This showcases polymorphism where the same method name (draw, update) behaves differently depending on whether it's called on a Snake object or a Food object. 
 
 ### Abstract methods:
 
