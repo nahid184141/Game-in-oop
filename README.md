@@ -48,7 +48,7 @@ class Food(GameObject):
         super().__init__(x, y, FOOD_SIZE)
 
 ```
--In this code  Snake and Food class are inherit from parent class Gameobject.
+- In this code  Snake and Food class are inherit from parent class Gameobject.
 
 ### Polymorphism:
 
