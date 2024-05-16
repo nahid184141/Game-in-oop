@@ -53,7 +53,7 @@ class Food(GameObject):
 ### Polymorphism:
 - Polymorphism allows methods to be defined in a superclass and that have been overridden in a subclass to have different behaviors based on the object on which they are called.
   #### Example
-  ```python
+```python
   class Snake(GameObject):
     def draw(self, surface):
         for segment in self.body:
