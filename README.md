@@ -98,3 +98,14 @@ class GameManager:
 ```
 - The GameManager class is designed as a singleton. It ensures that there is only one instance of this class throughout the application, which is crucial for maintaining a consistent state of the game across different parts of the application.
 ### Factory pattern:
+- The Factory Pattern involves a method that handles object creation and encapsulates it in a separate object. This allows for creating objects without specifying the exact class of object that will be created.
+  ```python
+  class GameObjectFactory:
+    @staticmethod
+    def create_object(type, x, y):
+        if type == "snake":
+            return Snake(x, y)
+        elif type == "food":
+            return Food(x, y)
+```
+- The GameObjectFactory class uses the Factory pattern to create instances of Snake and Food. This method returns a new instance of a class depending on the type argument provided, decoupling the creation details from the main game logic.
