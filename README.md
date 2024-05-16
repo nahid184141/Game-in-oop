@@ -1,5 +1,5 @@
 # snake Game-in-oop
 <br>
-Author:MD Nahid Hasan Rabbi
+Author:Md Nahid Hasan Rabbi
 
 This is my first git project
