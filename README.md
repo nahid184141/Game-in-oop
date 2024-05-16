@@ -1,6 +1,6 @@
 # Snake Game-in-oop
 <br>
-**Author:Md Nahid Hasan Rabbi**
+** Author:Md Nahid Hasan Rabbi **
 
 This is my first github project.
 ## Introduction
@@ -36,7 +36,7 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 ##### In this code have five class those are enncapsulated.
 ### Inheritance:
 - Inheritance is a mechanism where a new class derives attributes and methods from an existing class. The new class is called a derived class or subclass, and the existing class is called a base class or superclass.
- #### Example
+#### Example
 ```python
 class Snake(GameObject):
     def __init__(self, x, y):
@@ -52,7 +52,7 @@ class Food(GameObject):
 
 ### Polymorphism:
 - Polymorphism allows methods to be defined in a superclass and that have been overridden in a subclass to have different behaviors based on the object on which they are called.
- #### Example
+#### Example
 ```python
   class Snake(GameObject):
     def draw(self, surface):
@@ -67,7 +67,7 @@ class Food(GameObject):
 
 ### Abstract methods:
 - Abstract methods are methods that are declared in an abstract class and must be implemented by all subclasses of this abstract class. An abstract class cannot be instantiated and is used to define a common interface for its subclasses.
- #### Example
+#### Example
  ```python
  from abc import ABC, abstractmethod
 
@@ -86,7 +86,7 @@ class GameObject(ABC):
 
 ### singleton pattern:
 - The Singleton Pattern ensures that a class has only one instance and provides a global point of access to that instance.
-  #### Example
+#### Example
 ```python
 class GameManager:
     _instance = None
@@ -111,7 +111,7 @@ class GameManager:
             return Food(x, y)
   ```
 - The GameObjectFactory class uses the Factory pattern to create instances of Snake and Food. This method returns a new instance of a class depending on the type argument provided, decoupling the creation details from the main game logic.
-  ## Result
+## Result
 - The Snake game allows players to control a snake using arrow keys, eat food items to grow longer, and displays the score dynamically on the screen.
 - Implementing collision detection between the snake and itself was challenging, particularly in managing the snake's body segments and ensuring accurate detection. Additionally, maintaining a consistent frame rate and smooth movement required fine-tuning the game loop.Also, github control is challenging for me.
 - The game successfully detects when the snake collides with itself or the boundaries, displaying a "Game Over" message and providing options to restart or exit.
