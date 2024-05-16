@@ -1,6 +1,6 @@
 # Snake Game-in-oop
-<br>
-** Author:Md Nahid Hasan Rabbi **
+
+**Author:Md Nahid Hasan Rabbi**
 
 This is my first github project.
 ## Introduction
