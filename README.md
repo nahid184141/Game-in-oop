@@ -69,16 +69,17 @@ class Food(GameObject):
 - Abstract methods are methods that are declared in an abstract class and must be implemented by all subclasses of this abstract class. An abstract class cannot be instantiated and is used to define a common interface for its subclasses.
  #### Example
  ```python
-  from abc import ABC, abstractmethod
+ from abc import ABC, abstractmethod
 
-   class GameObject(ABC):
-        @abstractmethod
-     def draw(self, surface):
-          pass
+class GameObject(ABC):
+    @abstractmethod
+    def draw(self, surface):
+        pass
 
-         @abstractmethod
-     def update(self):
-          pass
+    @abstractmethod
+    def update(self):
+        pass
+
 ```
 
 - GameObject class defines draw and update as abstract methods, making GameObject an abstract class that cannot be instantiated. All classes that inherit from GameObject must provide an implementation for these methods.
