@@ -85,5 +85,16 @@ class GameObject(ABC):
 - GameObject class defines draw and update as abstract methods, making GameObject an abstract class that cannot be instantiated. All classes that inherit from GameObject must provide an implementation for these methods.
 
 ### singleton pattern:
+- The Singleton Pattern ensures that a class has only one instance and provides a global point of access to that instance.
+```python
+class GameManager:
+    _instance = None
 
+    @staticmethod
+    def get_instance():
+        if GameManager._instance is None:
+            GameManager()
+        return GameManager._instance
+```
+- The GameManager class is designed as a singleton. It ensures that there is only one instance of this class throughout the application, which is crucial for maintaining a consistent state of the game across different parts of the application.
 ### Factory pattern:
