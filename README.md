@@ -31,4 +31,4 @@ Encapsulation is an OOP principle that bundles the data (attributes) and methods
         self.dx, self.dy = SNAKE_SIZE, 0
 ```
 Here, Snake class, encapsulation is evident as it combines properties like body, dx, and dy, and methods like draw, update, and change_direction within a single class. Access to these properties is controlled through methods like change_direction, which manages how the snake's direction can be altered.
-### In this code have five those are enncapsulated.
+##### In this code have five class those are enncapsulated.
