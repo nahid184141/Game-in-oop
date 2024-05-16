@@ -11,4 +11,4 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 2.Download the `snakegame.py` file to your local machine.<br>
 3. Open a terminal or command prompt.<br>
 4. Navigate to the directory containing the downloaded file.<br>
-5. Run the command: `snakegame.py`
+5. Run the command: `snakegame.py`.
