@@ -20,3 +20,4 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 
 # Analysis
 ***The Snake game is structured using Object-Oriented Programming (OOP) principles and includes the use of the Singleton and Factory design patterns.***
+Block code "fences"
