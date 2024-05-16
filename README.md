@@ -58,7 +58,7 @@ class Food(GameObject):
     def draw(self, surface):
         for segment in self.body:
             pygame.draw.rect(surface, (0, 255, 0), (segment[0], segment[1], self.size, self.size))
-```python
+
  class Food(GameObject):
     def draw(self, surface):
         pygame.draw.rect(surface, self.color, (self.x, self.y, self.size, self.size))
