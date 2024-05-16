@@ -36,7 +36,7 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 ##### In this code have five class those are enncapsulated.
 ### Inheritance:
 - Inheritance is a mechanism where a new class derives attributes and methods from an existing class. The new class is called a derived class or subclass, and the existing class is called a base class or superclass.
-#### Example
+ #### Example
 ```python
 class Snake(GameObject):
     def __init__(self, x, y):
@@ -52,7 +52,7 @@ class Food(GameObject):
 
 ### Polymorphism:
 - Polymorphism allows methods to be defined in a superclass and that have been overridden in a subclass to have different behaviors based on the object on which they are called.
-  #### Example
+ #### Example
 ```python
   class Snake(GameObject):
     def draw(self, surface):
@@ -67,17 +67,18 @@ class Food(GameObject):
 
 ### Abstract methods:
 - Abstract methods are methods that are declared in an abstract class and must be implemented by all subclasses of this abstract class. An abstract class cannot be instantiated and is used to define a common interface for its subclasses.
-  ```python
+ #### Example
+ ```python
   from abc import ABC, abstractmethod
 
-class GameObject(ABC):
-    @abstractmethod
-    def draw(self, surface):
-        pass
+   class GameObject(ABC):
+        @abstractmethod
+     def draw(self, surface):
+          pass
 
-    @abstractmethod
-    def update(self):
-        pass```
+         @abstractmethod
+     def update(self):
+          pass```
 - GameObject class defines draw and update as abstract methods, making GameObject an abstract class that cannot be instantiated. All classes that inherit from GameObject must provide an implementation for these methods.
 
 ### singleton pattern:
