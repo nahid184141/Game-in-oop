@@ -19,8 +19,10 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 - Press 'Esc' to exit the game.
 
 # Analysis
-***The Snake game is structured using Object-Oriented Programming (OOP) principles and includes the use of the Singleton and Factory design patterns.***<br>
-
+***The Snake game is structured using Object-Oriented Programming (OOP) principles and includes the use of the Singleton and Factory design patterns.***
+### Encapsulation:
+Encapsulation is an OOP principle that bundles the data (attributes) and methods (operations) that manipulate the data into a single unit or class. It also restricts direct access to some of an object's components, which is a way of preventing accidental interference and misuse of the methods and data.
+#### Example
 ```python
 class Snake(GameObject):
     def __init__(self, x, y):
