@@ -21,7 +21,7 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 # Analysis
 ***The Snake game is structured using Object-Oriented Programming (OOP) principles and includes the use of the Singleton and Factory design patterns.***
 ### Encapsulation:
-Encapsulation is an OOP principle that bundles the data (attributes) and methods (operations) that manipulate the data into a single unit or class. It also restricts direct access to some of an object's components, which is a way of preventing accidental interference and misuse of the methods and data.
+-Encapsulation is an OOP principle that bundles the data (attributes) and methods (operations) that manipulate the data into a single unit or class. It also restricts direct access to some of an object's components, which is a way of preventing accidental interference and misuse of the methods and data.
 #### Example
 ```python
   class Snake(GameObject):
@@ -30,5 +30,5 @@ Encapsulation is an OOP principle that bundles the data (attributes) and methods
         self.body = [(x, y)]
         self.dx, self.dy = SNAKE_SIZE, 0
 ```
-Here, Snake class, encapsulation is evident as it combines properties like body, dx, and dy, and methods like draw, update, and change_direction within a single class. Access to these properties is controlled through methods like change_direction, which manages how the snake's direction can be altered.
+-Here, Snake class, encapsulation is evident as it combines properties like body, dx, and dy, and methods like draw, update, and change_direction within a single class. Access to these properties is controlled through methods like change_direction, which manages how the snake's direction can be altered.
 ##### In this code have five class those are enncapsulated.
