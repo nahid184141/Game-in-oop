@@ -51,6 +51,17 @@ class Food(GameObject):
 - In this code  Snake and Food class are inherit from parent class Gameobject.
 
 ### Polymorphism:
+- Polymorphism allows methods to be defined in a superclass and that have been overridden in a subclass to have different behaviors based on the object on which they are called.
+  #### Example
+  ```python
+  class Snake(GameObject):
+    def draw(self, surface):
+        for segment in self.body:
+            pygame.draw.rect(surface, (0, 255, 0), (segment[0], segment[1], self.size, self.size))
+class Food(GameObject):
+    def draw(self, surface):
+        pygame.draw.rect(surface, self.color, (self.x, self.y, self.size, self.size))
+```
 
 ### Abstract methods:
 
