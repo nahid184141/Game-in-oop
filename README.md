@@ -17,3 +17,5 @@ The Snake Game is a classic game implemented in Python using the Pygame library.
 - The game continues until the snake collides with itself.
 - Press 'R' to restart the game after a game over.
 - Press 'Esc' to exit the game.
+
+# Analysis
